@@ -11,21 +11,21 @@ public class Project extends JFrame implements ActionListener{
         
         setSize(1920,1030);
         
-        ImageIcon ic =  new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/third.jpg"));
-        Image i3 = ic.getImage().getScaledInstance(1900, 950,Image.SCALE_DEFAULT);
+        ImageIcon ic =  new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/main1.jpg"));
+        Image i3 = ic.getImage().getScaledInstance(1300, 650,Image.SCALE_DEFAULT);
         ImageIcon icc3 = new ImageIcon(i3);
         JLabel l1 = new JLabel(icc3);
         
         add(l1);
         
         JMenuBar mb  = new JMenuBar();
-        JMenu master = new JMenu("Master");
+        JMenu master  = new JMenu("Master");
         JMenuItem m1 = new JMenuItem("New Faculty");
         JMenuItem m2 = new JMenuItem("New Student Admission");
-        master.setForeground(Color.BLUE);
+        master.setForeground(Color.BLACK);
         
         
-        m1.setFont(new Font("monospaced",Font.BOLD,16));
+        m1.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon1 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon1.png"));
         Image image1 = icon1.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         m1.setIcon(new ImageIcon(image1));
@@ -33,7 +33,7 @@ public class Project extends JFrame implements ActionListener{
         m1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, ActionEvent.CTRL_MASK));
         m1.setBackground(Color.WHITE);
         
-        m2.setFont(new Font("monospaced",Font.BOLD,16));
+        m2.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon2 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon2.png"));
         Image image2 = icon2.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
         m2.setIcon(new ImageIcon(image2));
@@ -52,7 +52,7 @@ public class Project extends JFrame implements ActionListener{
         JMenuItem u2 = new JMenuItem("Teacher Details");
         user.setForeground(Color.RED);
         
-        u1.setFont(new Font("monospaced",Font.BOLD,16));
+        u1.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon4 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon3.png"));
         Image image4 = icon4.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         u1.setIcon(new ImageIcon(image4));
@@ -60,7 +60,7 @@ public class Project extends JFrame implements ActionListener{
         u1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, ActionEvent.CTRL_MASK));
         u1.setBackground(Color.WHITE);
         
-        u2.setFont(new Font("monospaced",Font.BOLD,16));
+        u2.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon5 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon4.jpg"));
         Image image5 = icon5.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         u2.setIcon(new ImageIcon(image5));
@@ -71,12 +71,45 @@ public class Project extends JFrame implements ActionListener{
         u1.addActionListener(this);
         u2.addActionListener(this);
         
+        
+        
+        
+        JMenu user1 = new JMenu("Student Achievement");
+        JMenuItem u11 = new JMenuItem("Add Achievement");
+        JMenuItem u22 = new JMenuItem("View Achievement");
+        user1.setForeground(Color.RED);
+        
+        u11.setFont(new Font("monospaced",Font.BOLD,20));
+        //ImageIcon icon4 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon3.png"));
+        //Image image4 = icon4.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
+        u11.setIcon(new ImageIcon(image4));
+        u11.setMnemonic('C');
+        u11.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, ActionEvent.CTRL_MASK));
+        u11.setBackground(Color.WHITE);
+        
+        u22.setFont(new Font("monospaced",Font.BOLD,20));
+        //ImageIcon icon5 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon4.jpg"));
+        //Image image5 = icon5.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
+        u22.setIcon(new ImageIcon(image5));
+        u22.setMnemonic('D');
+        u22.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_B, ActionEvent.CTRL_MASK));
+        u22.setBackground(Color.WHITE);
+        
+        u11.addActionListener(this);
+        u22.addActionListener(this);
+        
+        
+        
+        
+        
+        
+        
         JMenu attendance = new JMenu("Attendance");
         JMenuItem a1 = new JMenuItem("Student Attendance");
         JMenuItem a2 = new JMenuItem("Teacher Attendance");
-        attendance.setForeground(Color.BLUE);
+        attendance.setForeground(Color.BLACK);
         
-        a1.setFont(new Font("monospaced",Font.BOLD,16));
+        a1.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon23 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon14.jpg"));
         Image image24 = icon23.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         a1.setIcon(new ImageIcon(image24));
@@ -85,7 +118,7 @@ public class Project extends JFrame implements ActionListener{
         a1.setBackground(Color.WHITE);
         attendance.add(a1);
         
-        a2.setFont(new Font("monospaced",Font.BOLD,16));
+        a2.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon25 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon15.png"));
         Image image26 = icon25.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         a2.setIcon(new ImageIcon(image26));
@@ -104,7 +137,7 @@ public class Project extends JFrame implements ActionListener{
         JMenuItem b2 = new JMenuItem("Teacher Attendance Detail");
         attendance_detail.setForeground(Color.RED);
         
-        b1.setFont(new Font("monospaced",Font.BOLD,16));
+        b1.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon27 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon15.png"));
         Image image28 = icon27.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         b1.setIcon(new ImageIcon(image28));
@@ -113,7 +146,7 @@ public class Project extends JFrame implements ActionListener{
         b1.setBackground(Color.WHITE);
         attendance_detail.add(b1);
         
-        b2.setFont(new Font("monospaced",Font.BOLD,16));
+        b2.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon29 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon14.jpg"));
         Image image30 = icon29.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         b2.setIcon(new ImageIcon(image30));
@@ -129,9 +162,9 @@ public class Project extends JFrame implements ActionListener{
         JMenu exam = new JMenu("Examination");
         JMenuItem c1 = new JMenuItem("Examination Details");
         JMenuItem c2 = new JMenuItem("Enter Marks");
-        exam.setForeground(Color.BLUE);
+        exam.setForeground(Color.BLACK);
         
-        c1.setFont(new Font("monospaced",Font.BOLD,16));
+        c1.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon30 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon16.png"));
         Image image31 = icon30.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         c1.setIcon(new ImageIcon(image31));
@@ -140,7 +173,7 @@ public class Project extends JFrame implements ActionListener{
         c1.setBackground(Color.WHITE);
         exam.add(c1);
         
-        c2.setFont(new Font("monospaced",Font.BOLD,16));
+        c2.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon32 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon17.png"));
         Image image33 = icon32.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         c2.setIcon(new ImageIcon(image33));
@@ -155,9 +188,9 @@ public class Project extends JFrame implements ActionListener{
         JMenu report = new JMenu("Update Details");
         JMenuItem r1 = new JMenuItem("Update Students");
         JMenuItem r2 = new JMenuItem("Update Teachers");
-        report.setForeground(Color.RED);
+        report.setForeground(Color.BLACK);
         
-        r1.setFont(new Font("monospaced",Font.BOLD,16));
+        r1.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon7 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon5.png"));
         Image image7 = icon7.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         r1.setIcon(new ImageIcon(image7));
@@ -167,7 +200,7 @@ public class Project extends JFrame implements ActionListener{
         
         r1.addActionListener(this);
         
-        r2.setFont(new Font("monospaced",Font.BOLD,16));
+        r2.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon iconn = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon6.png"));
         Image imagee = iconn.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         r2.setIcon(new ImageIcon(imagee));
@@ -183,9 +216,9 @@ public class Project extends JFrame implements ActionListener{
         JMenu fee = new JMenu("Fee Details");
         JMenuItem s1 = new JMenuItem("Fee Structure");
         JMenuItem s2 = new JMenuItem("Student Fee Form");
-        fee.setForeground(Color.BLUE);
+        fee.setForeground(Color.RED);
         
-        s1.setFont(new Font("monospaced",Font.BOLD,16));
+        s1.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon14 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon7.png"));
         Image image15 = icon14.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
         s1.setIcon(new ImageIcon(image15));
@@ -195,7 +228,7 @@ public class Project extends JFrame implements ActionListener{
         
         s1.addActionListener(this);
         
-        s2.setFont(new Font("monospaced",Font.BOLD,16));
+        s2.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon16 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon8.png"));
         Image image17 = icon16.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
         s2.setIcon(new ImageIcon(image17));
@@ -210,10 +243,10 @@ public class Project extends JFrame implements ActionListener{
         JMenuItem ut1 = new JMenuItem("Notepad");
         JMenuItem ut2 = new JMenuItem("Calculator");
         JMenuItem ut3 = new JMenuItem("Web Browser");
-        utility.setForeground(Color.RED); 
+        utility.setForeground(Color.BLACK); 
         
 
-        ut1.setFont(new Font("monospaced",Font.BOLD,16));
+        ut1.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon18 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon9.png"));
         Image image19 = icon18.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         ut1.setIcon(new ImageIcon(image19));
@@ -222,7 +255,7 @@ public class Project extends JFrame implements ActionListener{
         ut1.setBackground(Color.WHITE);
         
 
-        ut2.setFont(new Font("monospaced",Font.BOLD,16));
+        ut2.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon20 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon10.png"));
         Image image21 = icon20.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         ut2.setIcon(new ImageIcon(image21));
@@ -231,7 +264,7 @@ public class Project extends JFrame implements ActionListener{
         ut2.setBackground(Color.WHITE);
         
 
-        ut3.setFont(new Font("monospaced",Font.BOLD,16));
+        ut3.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon10 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon11.png"));
         Image image10 = icon10.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         ut3.setIcon(new ImageIcon(image10));
@@ -246,9 +279,9 @@ public class Project extends JFrame implements ActionListener{
         
         JMenu about = new JMenu("About");
         JMenuItem aboutus = new JMenuItem("About Us");
-        about.setForeground(Color.BLUE);
+        about.setForeground(Color.RED);
         
-        aboutus.setFont(new Font("monospaced",Font.BOLD,16));
+        aboutus.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon21 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon13.jpg"));
         Image image22 = icon21.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         aboutus.setIcon(new ImageIcon(image22));
@@ -260,10 +293,10 @@ public class Project extends JFrame implements ActionListener{
 
         JMenu exit = new JMenu("Exit");
         JMenuItem ex = new JMenuItem("Exit");
-        exit.setForeground(Color.RED);
+        exit.setForeground(Color.BLACK);
         
 
-        ex.setFont(new Font("monospaced",Font.BOLD,16));
+        ex.setFont(new Font("monospaced",Font.BOLD,20));
         ImageIcon icon11 = new ImageIcon(ClassLoader.getSystemResource("student/management/project/icons/icon12.png"));
         Image image11 = icon11.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
         ex.setIcon(new ImageIcon(image11));
@@ -280,6 +313,10 @@ public class Project extends JFrame implements ActionListener{
         
         user.add(u1);
         user.add(u2);
+        
+        user1.add(u11);
+        user1.add(u22);
+        
         
         report.add(r1);
         report.add(r2);
@@ -299,6 +336,7 @@ public class Project extends JFrame implements ActionListener{
         mb.add(attendance);
         mb.add(attendance_detail);
         mb.add(exam);
+        mb.add(user1);
         mb.add(report);
         mb.add(fee);
         mb.add(utility);
@@ -319,9 +357,18 @@ public class Project extends JFrame implements ActionListener{
         }else if(msg.equals("New Faculty")){
             new AddTeacher().f.setVisible(true);
             
+        }else if(msg.equals("Add Achievement")){
+            new Student_A().f.setVisible(true);
+            
+//        }else if(msg.equals("Student Attendance Detail")){
+//            new StudentAttendanceDetail().setVisible(true);
+//   
         }else if(msg.equals("Student Details")){
             new StudentDetails().setVisible(true);
             
+        }else if(msg.equals("View Achievement")){
+            new Achievement_Details().setVisible(true);
+        
         }else if(msg.equals("Teacher Details")){
             new TeacherDetails().setVisible(true);
            

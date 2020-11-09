@@ -20,7 +20,7 @@ public class StudentAttendanceDetail extends JFrame implements ActionListener{
         setLocation(450,150);
 
         try{
-            String q="select * from student_attendance";
+            String q="select * from attendance_student";
             conn c1=new conn();
             ResultSet rs=c1.s.executeQuery(q);
             while(rs.next()){

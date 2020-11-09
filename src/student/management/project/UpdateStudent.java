@@ -23,7 +23,7 @@ class UpdateStudent implements ActionListener{
 
         JLabel l1 = new JLabel("Enter roll number to update the data of student");
         l1.setBounds(50,100,500,30);
-        l1.setFont(new Font("serif",Font.ITALIC,20));
+        l1.setFont(new Font("Jazz LET",Font.BOLD,20));
         f.add(l1);
         
         t12 = new JTextField();
@@ -38,9 +38,9 @@ class UpdateStudent implements ActionListener{
         b2.addActionListener(this);
 
         
-        id8 = new JLabel("Update Student Details:");
-        id8.setBounds(50,10,500,50);
-        id8.setFont(new Font("serif",Font.ITALIC,40));
+        id8 = new JLabel("Update Student Details");
+        id8.setBounds(200,5,500,50);
+        id8.setFont(new Font("serif",Font.BOLD,40));
         id8.setForeground(Color.black);
         f.add(id8);
 

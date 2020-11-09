@@ -35,7 +35,7 @@ class AddTeacher implements ActionListener{
 
         id8 = new JLabel("New Teacher Details");
         id8.setBounds(320,5,500,50);
-        id8.setFont(new Font("serif",Font.ITALIC,25));
+        id8.setFont(new Font("Jazz LET",Font.BOLD,35));
         id8.setForeground(Color.black);
         id15.add(id8);
         f.add(id15);

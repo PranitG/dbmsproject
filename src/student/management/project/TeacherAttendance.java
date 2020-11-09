@@ -15,7 +15,7 @@ public class TeacherAttendance extends JFrame implements ActionListener{
     
     TeacherAttendance(){
        
-        setLayout(new GridLayout(4,2,50,50));
+        setLayout(new GridLayout(6,2,50,50));
         c2 = new Choice();
         try{
             conn c = new conn();

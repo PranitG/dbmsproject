@@ -22,40 +22,40 @@ public class TeacherDetails extends JFrame implements ActionListener{
         setLayout(null);
         
         l1 = new JLabel("Enter roll number to delete Teacher : ");
-        l1.setBounds(50,360,400,30);
+        l1.setBounds(230,360,400,30);
         l1.setFont(new Font("serif",Font.BOLD,20));
         add(l1);
         
         t2 = new JTextField();
-        t2.setBounds(400,360,200,30);
+        t2.setBounds(560,360,200,30);
         add(t2);
         
         b1 = new JButton("Delete");
         b1.setBackground(Color.BLACK);
         b1.setForeground(Color.WHITE);
-        b1.setBounds(620, 360, 100 ,30);
+        b1.setBounds(780, 360, 100 ,30);
         add(b1);
             
-        l2 = new JLabel("Add New Teacher");
-        l2.setBounds(50,450,400,30);
+        l2 = new JLabel("Add New Teacher:");
+        l2.setBounds(230,450,400,30);
         l2.setFont(new Font("serif",Font.BOLD,20));
         add(l2);
         
         b2 = new JButton("Add");
         b2.setBackground(Color.BLACK);
         b2.setForeground(Color.WHITE);
-        b2.setBounds(300, 450, 150 ,30);
+        b2.setBounds(500, 450, 150 ,30);
         add(b2);
         
-        l3 = new JLabel("Update Teacher Details");
-        l3.setBounds(50,490,400,30);
+        l3 = new JLabel("Update Teacher Details:");
+        l3.setBounds(230,540,400,30);
         l3.setFont(new Font("serif",Font.BOLD,20));
         add(l3);
         
         b3 = new JButton("Update");
         b3.setBackground(Color.BLACK);
         b3.setForeground(Color.WHITE);
-        b3.setBounds(300, 490, 150 ,30);
+        b3.setBounds(500, 540, 150 ,30);
         add(b3);
         
         b1.addActionListener(this);

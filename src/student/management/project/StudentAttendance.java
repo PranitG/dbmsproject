@@ -15,7 +15,7 @@ public class StudentAttendance extends JFrame implements ActionListener{
     
     StudentAttendance(){
        
-        setLayout(new GridLayout(4,2,50,50));
+        setLayout(new GridLayout(6,2,90,40));
         c2 = new Choice();
         try{
             conn c = new conn();
@@ -76,7 +76,7 @@ public class StudentAttendance extends JFrame implements ActionListener{
         String s = sh.getSelectedItem();
         String dt = new Date().toString();
         String id=c2.getSelectedItem();
-        String qry = "insert into student_attendance values("+ id +",'"+dt+"','"+f+"','"+s+"')";
+        String qry = "insert into attendance_student values("+ id +",'"+dt+"','"+f+"','"+s+"')";
        
         try{
             conn c1 = new conn();
